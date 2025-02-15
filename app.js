@@ -8,7 +8,7 @@ const dotenv=require("dotenv").config();
 const indexRouter=require("./routes/indexRouter");
 const db=require("./config/mongoose-connection");
 app.use(express.urlencoded({extended:true}));  //Parse the incoming request
-app.use(express.jsonS());   // Parse the incoming request
+app.use(express.json());   // Parse the incoming request
 app.use(expressSession({
     resave:false,                                        //Session Middleware 
     saveUninitialized:false,
