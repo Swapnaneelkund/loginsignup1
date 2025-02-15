@@ -1,4 +1,5 @@
 const mongoose=require('mongoose');
+//Mongodb model
 const userSchema=mongoose.Schema({
     fullname:{
         type:String,
